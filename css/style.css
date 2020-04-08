@@ -1,0 +1,86 @@
+
+body{
+    margin: 0 6vw 0 6vw;
+}
+
+header{
+    background-color:#579c87;
+    color:#fdcb46;
+
+    text-align:center;
+    font-size:1.2rem;
+}
+h1{
+    padding: 2vh 0 2vh 0;
+    margin-top:0;
+}
+h2{
+    font-size:1rem;
+}
+
+
+
+
+
+.center{
+    text-align: center;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30vh 30vh;
+}
+.one {
+    grid-column: 1 ;
+    grid-row: 1;
+}
+.two {
+    grid-column: 2 ;
+    grid-row: 1;
+}
+.three {
+    grid-column: 1 ;
+    grid-row: 2;
+}
+.four {
+    grid-column: 2 ;
+    grid-row: 2;
+}
+.five{
+   
+    padding-left:10px;
+}
+.six{
+    
+    text-align:right;
+    padding-right:20px;
+}
+
+
+
+
+#prochainement{
+    background-color:#579c87;
+    color:#fdcb46;
+    width:170px;
+    border-radius: 10px;
+
+    text-align:center;
+    margin:auto;
+    
+    font-size: 1.3rem;
+}
+#prochainement p {
+    padding: 1vh 0 1vh 0;
+}
+
+
+
+
+footer{
+    background-color:#579c87;
+    color:#fdcb46;
+}
