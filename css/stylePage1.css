@@ -1,0 +1,75 @@
+body{
+    margin: 0 6vw 0 6vw;
+}
+header{
+    background-color:#579c87;
+    color:#fdcb46;
+
+    text-align:center;
+    font-size:1.2rem;
+}
+h1{
+    padding: 2.5vh 0 2.5vh 0; 
+}
+h2{
+    text-align: center;
+}
+h3{
+    font-size:1.5rem;
+    margin-top:0;
+}
+h4{
+    display:flex;
+    justify-content: space-evenly;
+}
+.trait{
+    height: 3px;
+    width:15vw;
+    background-color:black;
+    margin-top:7px;
+}
+
+main{
+    background-color:#fcdfdb;
+    margin:0 8vw 8vh 8vw;
+    padding: 5vh 6vw 2vh 6vw;
+
+    box-shadow: 6px 6px 5px #ededed;
+}
+
+
+.entete{
+    text-align: center;
+}
+
+footer{
+    background-color:#579c87;
+    color:#fdcb46;
+    display:flex;
+    justify-content: space-between;
+
+    width: 95%;
+
+    padding: 1.8vh 2vw 1.8vh 2vw;
+}
+footer a{
+    text-decoration: none;
+    color:#fdcb46;
+}
+
+
+.pied{
+    display:flex;
+    justify-content: center;
+    margin-top:5vh;
+}
+.pied p{
+    margin-left:20px;
+    margin-top:7px;   /* alignement text */ 
+}
+
+.menu{
+    display:flex;
+    justify-content: space-between;
+}
+
