@@ -25,7 +25,9 @@ header{
     font-size:1.2rem;
     text-align:center;
 }
-
+.entete{
+    text-align: center;
+}
 
 
 
@@ -42,21 +44,41 @@ h1 a{
     text-decoration: none;
     color:#fdcb46;
 }
+
 h2{
-    text-align: center;
-}
-h3{
-    font-size:1.5rem;
+    font-size:2.2rem;
     margin-top:0;
+    margin-bottom:6vtrah;
     font-family: '1menu1';
 }
-h4{
+
+.container{
     display:flex;
     justify-content: space-between;
-    font-size:1.1rem;
-
-    
 }
+
+h3{
+    font-size:1.1rem;
+}
+h3:hover + .sousligner{
+    transform:scaleX(0);
+}
+
+
+.titresouligne{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    bottom:25px;
+}
+.sousligner{
+    height:3px;
+    width:9vw;
+    background-color:black;
+    transform: scaleX(100%);
+    transition:transform 500ms ease-in-out;
+}
+
 
 
 .trait{
@@ -80,9 +102,19 @@ section{
     margin-bottom:8vh;
 }
 
-.entete{
-    text-align: center;
+.menu{
+    display:flex;
+    justify-content: space-between;
 }
+.gras{
+    font-weight: bold;
+}
+
+
+#dessert_sans_prix p{
+    padding: 8px 0 8px;
+}
+
 i{
     color: #f15861;
 }
@@ -137,14 +169,13 @@ footer a:hover{
     justify-content: center;
     margin-top:5vh;
 }
+
 .pied p{
     margin-left:20px;
     margin-top:7px;   /* alignement text */ 
+    font-size:1.5rem;
+    font-family: '1menu1';
 }
 
-.menu{
-    display:flex;
-    justify-content: space-between;
-    
-}
+
 

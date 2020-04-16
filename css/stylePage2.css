@@ -33,15 +33,14 @@ h1 a{
 }
 
 h2{
-    font-size:1.5rem;
-    margin-top:0;
-    margin-bottom:7vh;
-
+    font-size:2rem;
+    margin-top:2vh;
+    margin-bottom:10vh;
     font-family:'1menu2';
 
     background: -webkit-linear-gradient(right, #905bfd ,#d8852e);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h3{
@@ -94,6 +93,9 @@ section{
 }
 #dessert{
     color:#6e4ccc;
+}
+#dessert p {
+    padding: 8px 0 8px;
 }
 
 
