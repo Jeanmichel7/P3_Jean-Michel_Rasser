@@ -1,25 +1,47 @@
+@font-face{
+    font-family:'font_h1';
+    src:url('/font/SinkinSans-500Medium.otf');
+}
+@font-face{   
+    font-family:'1menu3';
+    src:url('/font/AlexBrush-Regular.ttf');
+}
+
 body{
-    margin: 0 6vw 0 6vw;
+    margin:0;
+    padding:0;
+
+    font-family: 'font_h1';
 }
 header{
     background-color:#579c87;
     color:#fdcb46;
 
-    text-align:center;
     font-size:1.2rem;
+    text-align:center;
+}
+h1{
+    height:8vh;
+    margin:0;
+    padding-top:2vh;
+
+    font-size:1.6rem;
+}
+h1 a{
+    text-decoration: none;
+    color:#fdcb46;
 }
 
-h1{
-    padding: 2.5vh 0 2.5vh 0; 
-}
 h2{
-    font-size:1.5rem;
+    font-size:2.8rem;
     margin-top:0;
     margin-bottom:50px;
+    font-family:'1menu3';
 }
 h3{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    font-size:1.1rem;
 }
 
 
@@ -27,10 +49,21 @@ h3{
 
 .trait{
     height: 3px;
-    width:15vw;
-    background-color:black;
-    margin-top:7px;
+    width:20vw;
+    margin-top:10px;
 }
+.bleu{
+    background-color: #0228dd ;
+}
+.bleu2{
+    background-color: #0670f3;
+}
+.bleu3{
+    background-color: #229df9;
+}
+
+
+
 .menu{
     display:flex;
     justify-content: space-between;
@@ -40,11 +73,19 @@ h3{
 
 
 main{
+    font-family:'1menu3';
     
-    margin:0 8vw 8vh 8vw;
+    margin:2vh 8vw 8vh 8vw;
     padding: 5vh 6vw 2vh 6vw;
 
     box-shadow: 6px 6px 5px #ededed;
+
+    background-color: #edefef;    
+    font-family: 'comic sans ms';
+    font-size:0.9rem;
+}
+section{
+    margin-bottom:8vh;
 }
 
 
@@ -58,14 +99,44 @@ footer{
     color:#fdcb46;
     display:flex;
     justify-content: space-between;
+    
 
-    width: 95%;
+    position:fixed;
+    bottom:0;
 
-    padding: 1.8vh 2vw 1.8vh 2vw;
+    width: 100%;
+    height: 6vh;
+    align-items:center;
 }
+
 footer a{
     text-decoration: none;
     color:#fdcb46;
+    padding: 0 2vw 0 2vw;
+}
+
+
+footer a:hover{
+    animation: wizz 400ms;
+}
+
+
+@keyframes wizz{
+    0%{
+        transform: translateX(5px);
+    }
+    20%{
+        transform:translateX(-5px);
+    }
+    50%{
+        transform: translateX(3px);
+    }
+    75%{
+        transform: translateX(-3px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 
 
