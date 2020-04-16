@@ -38,6 +38,10 @@ h2{
     margin-top:0;
     margin-bottom:50px;
     font-family:'1menu4';
+
+    background: -webkit-linear-gradient(right, #bfff7e,#42973c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 h3{
     display:flex;

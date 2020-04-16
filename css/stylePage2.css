@@ -38,7 +38,12 @@ h2{
     margin-bottom:7vh;
 
     font-family:'1menu2';
+
+    background: -webkit-linear-gradient(right, #905bfd ,#d8852e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
+
 h3{
     display:flex;
     justify-content: space-between;

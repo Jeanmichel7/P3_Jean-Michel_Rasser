@@ -37,6 +37,10 @@ h2{
     margin-top:0;
     margin-bottom:50px;
     font-family:'1menu3';
+
+    background: -webkit-linear-gradient(right, #91c7fd,#0431df);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 h3{
     display:flex;
@@ -99,7 +103,6 @@ footer{
     color:#fdcb46;
     display:flex;
     justify-content: space-between;
-    
 
     position:fixed;
     bottom:0;
