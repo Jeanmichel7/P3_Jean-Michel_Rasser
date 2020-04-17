@@ -32,7 +32,7 @@ header{
 
 
 h1{
-    height:8vh;
+    height:7vh;
     margin:0;
     padding-top:2vh;
 
@@ -59,9 +59,8 @@ h2{
 
 h3{
     font-size:1.1rem;
-}
-h3:hover + .sousligner{
-    transform:scaleX(0);
+    cursor:pointer;
+    margin-bottom:2px;
 }
 
 
@@ -73,10 +72,16 @@ h3:hover + .sousligner{
 }
 .sousligner{
     height:3px;
-    width:9vw;
-    background-color:black;
-    transform: scaleX(100%);
+    width:100%;
+    background-color:#a02121;
+    
+
+    transform: scaleX(0);
     transition:transform 500ms ease-in-out;
+}
+h3:hover + .sousligner{
+    transform:scaleX(1);
+    transform-origin: left;
 }
 
 
@@ -93,8 +98,8 @@ main{
     margin:2vh 8vw 8vh 8vw;
     padding: 5vh 6vw 2vh 6vw;
 
-    box-shadow: 6px 6px 5px #ededed;
-    font-family: 'comic sans ms';
+    box-shadow: 0px 0px 5px 5px #ededed;
+    font-family: 'Kalam', cursive;
     font-size:0.9rem;
 }
 
@@ -115,8 +120,10 @@ section{
     padding: 8px 0 8px;
 }
 
-i{
-    color: #f15861;
+.fab{
+    background: -webkit-linear-gradient(left,#f05160, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer{
@@ -179,3 +186,29 @@ footer a:hover{
 
 
 
+@media screen and (max-width:345px){
+    h2{
+        font-size:1.5rem;
+    }
+    h3{
+        font-size:1rem;
+        margin-top:20px;
+        padding: 5px 5px 5px 5px;
+        text-align: center;
+    }
+    footer a{
+        font-size:0.7rem;
+    }
+    #prochainement{
+        font-size:0.8rem;
+        width:180px;   
+    }
+    .pied{
+        display:flex;
+        flex-direction: column;
+        text-align:center;
+    }
+    main{
+        margin:0 0 20px 0;
+    }
+}

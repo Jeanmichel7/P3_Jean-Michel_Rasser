@@ -21,7 +21,7 @@ header{
     text-align:center;
 }
 h1{
-    height:8vh;
+    height:7vh;
     margin:0;
     padding-top:2vh;
 
@@ -42,21 +42,57 @@ h2{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-h3{
+.container{
     display:flex;
     justify-content: space-between;
-    font-size:1rem;
+}
+
+h3{
+    font-size:1.1rem;
+    cursor:pointer;
+    margin-bottom:2px;    
     font-weight:normal;
 }
 
 
+.titresouligne{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    bottom:25px;
+}
+.sousligner{
+    height:3px;
+    width:100%;
+    background-color:#2377a8;
+    
 
+    transform: scaleX(0);
+    transition:transform 500ms ease-in-out;
+}
+h3:hover + .sousligner{
+    transform:scaleX(1);
+    transform-origin: left;
+}
 
 .trait{
     height: 3px;
     width:20vw;
-    margin-top:10px;
+    
+    margin-top:3px;
 }
+.one{
+    background-color:#0228dd;
+}
+.two{
+    background-color:#0670f3;
+}
+.three{
+    background-color:#229df9;
+}
+
+
+
 .bleu{
     background-color: #0228dd ;
 }
@@ -81,15 +117,13 @@ h3{
 
 
 main{
-    font-family:'1menu3';
-    
     margin:2vh 8vw 8vh 8vw;
     padding: 5vh 6vw 2vh 6vw;
 
-    box-shadow: 6px 6px 5px #ededed;
+    box-shadow: 0px 0px 5px 5px #ededed;
 
-    background-color: #edefef;    
-    font-family: 'comic sans ms';
+    background-color: #edefef;  
+    font-family: 'Kalam', cursive;
     font-size:0.9rem;
 }
 section{
@@ -148,3 +182,29 @@ footer a:hover{
 
 
 
+@media screen and (max-width:345px){
+    h2{
+        font-size:2.1rem;
+    }
+    h3{
+        font-size:1rem;
+        margin-top:5px;
+        padding: 5px 5px 5px 5px;
+        text-align: center;
+    }
+    footer a{
+        font-size:0.7rem;
+    }
+    #prochainement{
+        font-size:0.8rem;
+        width:180px;   
+    }
+    .pied{
+        display:flex;
+        flex-direction: column;
+        text-align:center;
+    }
+    main{
+        margin:0 0 20px 0;
+    }
+}
