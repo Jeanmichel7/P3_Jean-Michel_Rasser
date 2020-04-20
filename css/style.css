@@ -1,0 +1,273 @@
+@font-face {
+  font-family: "font_h1";
+  src: url("/font/SinkinSans-500Medium.otf");
+}
+@font-face {
+  font-family: "1menu1";
+  src: url("/font/Milkshake.otf");
+  src: url("/font/Milkshake.ttf");
+}
+@font-face {
+  font-family: "1menu2";
+  src: url("/font/2-Questa_Regular.otf");
+}
+@font-face {
+  font-family: "1menu3";
+  src: url("/font/AlexBrush-Regular.ttf");
+}
+@font-face {
+  font-family: "1menu4";
+  src: url("/font/KaushanScript-Regular.otf");
+}
+@font-face {
+  font-family: "menu";
+  src: url("/font/Amble-Italic.ttf");
+}
+.text_menu1 {
+  font-family: "1menu1";
+}
+
+.text_menu2 {
+  font-family: "1menu2";
+}
+
+.menu2 {
+  color: #c77412;
+}
+
+.text_menu3 {
+  font-family: "1menu3";
+  font-size: 1.7rem;
+}
+
+.menu3 {
+  color: #0887fb;
+}
+
+.text_menu4 {
+  font-family: "1menu4";
+}
+
+.menu4 {
+  color: #72bf56;
+}
+
+.font_menu {
+  font-family: "menu";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "font_h1";
+}
+
+header {
+  background-color: #579c87;
+  color: #fdcb46;
+  font-size: 1.2rem;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2vh 2vw 2vh 2vw;
+}
+section p {
+  font-size: 1.8rem;
+}
+section i {
+  background: -webkit-linear-gradient(left, #f05160, #f7c727);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.one {
+  background-color: #fcdfdb;
+  color: #3c1218;
+}
+.one h2 {
+  font-size: 1.4rem;
+}
+
+.two {
+  background-color: #fff5fe;
+}
+.two h2 {
+  background: -webkit-linear-gradient(right, #905bfd, #d8852e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.three {
+  background-color: #f9f9f9;
+}
+.three h2 {
+  background: -webkit-linear-gradient(right, #91c7fd, #0431df);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.four {
+  background-color: #fdfffd;
+}
+.four h2 {
+  background: -webkit-linear-gradient(right, #bfff7e, #42973c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.style {
+  text-align: center;
+  text-decoration: none;
+  height: 40vh;
+  width: 60vw;
+  min-width: 250px;
+  box-shadow: 0px 0px 10px 3px #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.style .zoom {
+  transition: transform 400ms ease-in-out;
+}
+.style .zoom:hover {
+  transform: scale(1.3);
+}
+
+#prochainement {
+  background-color: #579c87;
+  color: #fdcb46;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 8vh;
+  font-size: 1.3rem;
+}
+#prochainement p {
+  padding: 1vh 0 1vh 0;
+  position: relative;
+}
+#prochainement #dot_1 {
+  position: absolute;
+  bottom: 8px;
+  left: 235px;
+  animation: pointier 600ms infinite;
+}
+#prochainement #dot_2 {
+  position: absolute;
+  bottom: 8px;
+  left: 241px;
+  animation: pointier 600ms 100ms infinite;
+}
+#prochainement #dot_3 {
+  position: absolute;
+  bottom: 8px;
+  left: 247px;
+  animation: pointier 600ms 200ms infinite;
+}
+
+footer {
+  background-color: #579c87;
+  color: #fdcb46;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 6vh;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  color: #fdcb46;
+  padding: 0 2vw 0 2vw;
+}
+footer a:hover {
+  animation: wizz 400ms;
+}
+
+@media screen and (max-width: 345px) {
+  h1 {
+    font-size: 0.5rem;
+  }
+
+  footer a {
+    font-size: 0.7rem;
+  }
+
+  #prochainement {
+    font-size: 0.8rem;
+    width: 180px;
+  }
+  #prochainement #dot_1 {
+    left: 148px;
+    bottom: 5px;
+  }
+  #prochainement #dot_2 {
+    left: 152px;
+    bottom: 5px;
+  }
+  #prochainement #dot_3 {
+    left: 156px;
+    bottom: 5px;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* > 600px */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section {
+    width: 40%;
+  }
+
+  h1 {
+    height: 60px;
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section {
+    width: 19%;
+  }
+}
+@keyframes pointier {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes wizz {
+  0% {
+    transform: translateX(5px);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
