@@ -1,18 +1,10 @@
-@font-face{
-    font-family: 'Fira_Sans';
-    src:url('/font/Fira_Sans_body/FiraSans-Regular.ttf')
-}
-@font-face{
-    font-family:'alex_brush';
-    src:url('/font/Alex_Brush_TextMenu3/AlexBrush-Regular.ttf')
-}
 
 
 body{
     margin:0;
     padding:0;
 
-    font-family: 'Fira_Sans';
+    font-family: 'Fira Sans', sans-serif;
 }
 header{
     background-color:#579c87;
@@ -37,9 +29,10 @@ h2{
     font-size:3rem;
     margin-top:3vh;
     margin-bottom:50px;
-    font-family:'alex_brush';
+    font-family: 'Alex Brush', cursive;
 
     background: -webkit-linear-gradient(right, #91c7fd,#0431df);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

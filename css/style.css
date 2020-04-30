@@ -1,36 +1,7 @@
-/* google font */
-@font-face {
-  font-family: "Fira_Sans";
-  src: url("/font/Fira_Sans_body/FiraSans-Regular.ttf");
-}
-@font-face {
-  font-family: "kalam";
-  src: url("/font/Kalam_Menu1/Kalam-Bold.ttf");
-}
-@font-face {
-  font-family: "lobster";
-  src: url("/font/Lobster_Two_TextMenu2/LobsterTwo-Regular.ttf");
-}
-@font-face {
-  font-family: "baskerville";
-  src: url("/font/Libre_Baskerville-Menu_2/LibreBaskerville-Bold.ttf");
-}
-@font-face {
-  font-family: "alex_brush";
-  src: url("/font/Alex_Brush_TextMenu3/AlexBrush-Regular.ttf");
-}
-@font-face {
-  font-family: "Indie_Flower";
-  src: url("/font/Indie_Flower_Menu3-4/IndieFlower-Regular.ttf");
-}
-@font-face {
-  font-family: "kaushan";
-  src: url("/font/Kaushan_Script_TextMenu4/KaushanScript-Regular.ttf");
-}
 body {
   margin: 0;
   padding: 0;
-  font-family: "Fira_Sans";
+  font-family: "Fira Sans", sans-serif;
 }
 
 header {
@@ -61,6 +32,7 @@ section p {
 }
 section i {
   background: -webkit-linear-gradient(left, #f05160, #f7c727);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -76,7 +48,7 @@ section i {
   font-family: "Courgette", cursive;
 }
 .one .menu1 {
-  font-family: "kalam";
+  font-family: "Kalam", cursive;
 }
 
 .two {
@@ -84,15 +56,16 @@ section i {
 }
 .two h2 {
   background: -webkit-linear-gradient(right, #905bfd, #d8852e);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .two .text_menu2 {
-  font-family: "lobster";
+  font-family: "Lobster Two", cursive;
   font-size: 1.3rem;
 }
 .two .menu2 {
-  font-family: "baskerville";
+  font-family: "Libre Baskerville", serif;
   color: #d8852e;
 }
 
@@ -101,16 +74,17 @@ section i {
 }
 .three h2 {
   background: -webkit-linear-gradient(right, #91c7fd, #0431df);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .three .text_menu3 {
-  font-family: "alex_brush";
+  font-family: "Alex Brush", cursive;
   font-size: 1.7rem;
 }
 .three .menu3 {
   color: #0887fb;
-  font-family: "Indie_Flower";
+  font-family: "Indie Flower", cursive;
   font-weight: bold;
 }
 
@@ -119,15 +93,16 @@ section i {
 }
 .four h2 {
   background: -webkit-linear-gradient(right, #bfff7e, #42973c);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .four .text_menu4 {
-  font-family: "kaushan";
+  font-family: "Kaushan Script", cursive;
 }
 .four .menu4 {
   color: #72bf56;
-  font-family: "Indie_Flower";
+  font-family: "Indie Flower", cursive;
   font-weight: bold;
 }
 

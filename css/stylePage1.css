@@ -1,20 +1,8 @@
-@font-face{
-    font-family: 'Fira_Sans';
-    src:url('/font/Fira_Sans_body/FiraSans-Regular.ttf')
-}
-
-@font-face{
-    font-family:'courgette';
-    src:url('/font/Courgette_TextMenu1/Courgette-Regular.ttf')
-}
-
-
-
 body{
     margin:0;
     padding:0;
 
-    font-family: 'Fira_Sans';
+    font-family: 'Fira Sans', sans-serif;
 }
 header{
     background-color:#579c87;
@@ -26,7 +14,6 @@ header{
 .entete{
     text-align: center;
 }
-
 
 
 h1{
@@ -50,7 +37,7 @@ h2{
     font-size:2.2rem;
     margin-top:0;
 
-    font-family: 'courgette';
+    font-family: 'Courgette', cursive;
 }
 
 .container{
@@ -123,6 +110,7 @@ section{
 
 i{
     background: -webkit-linear-gradient(left,#f05160, #f6916a);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -182,7 +170,7 @@ footer a:hover{
     margin-left:20px;
     margin-top:7px;   /* alignement text */ 
     font-size:1.5rem;
-    font-family: 'courgette';
+    font-family: 'Courgette', cursive;
 }
 
 

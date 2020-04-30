@@ -1,19 +1,8 @@
-@font-face{
-    font-family: 'Fira_Sans';
-    src:url('/font/Fira_Sans_body/FiraSans-Regular.ttf')
-}
-@font-face{
-    font-family:'kaushan';
-    src:url('/font/Kaushan_Script_TextMenu4/KaushanScript-Regular.ttf')
-}
-
-
-
 body{
     margin:0;
     padding:0;
 
-    font-family: 'Fira_Sans';
+    font-family: 'Fira Sans', sans-serif;
 }
 header{
     background-color:#579c87;
@@ -38,9 +27,10 @@ h2{
     font-size:3rem;
     margin-top:2vh;
     margin-bottom:8vh;
-    font-family:'kaushan';
+    font-family: 'Kaushan Script', cursive;
 
     background: -webkit-linear-gradient(right, #bfff7e,#42973c);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
