@@ -32,7 +32,7 @@
 /* google font */
 @font-face{
     font-family: 'baskerville';
-    src:url('/font/Libre_Baskerville-Menu_2/LibreBaskerville-Regular.ttf')
+    src:url('/font/Libre_Baskerville-Menu_2/LibreBaskerville-Bold.ttf')
 }
 
 
@@ -42,12 +42,8 @@
 }
 
 
-.text_menu2{
-    font-family: '1menu2';
-}
-.menu2{
-    color:#c77412;    
-}
+
+
 
 
 .text_menu3{
@@ -127,6 +123,13 @@ section{
         background: -webkit-linear-gradient(right, #905bfd ,#d8852e);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    .text_menu2{
+        font-family: '1menu2';
+    }
+    .menu2{
+        font-family: 'baskerville'; 
+        color:#d8852e; 
     }
 }
 .three {
