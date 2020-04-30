@@ -1,62 +1,66 @@
-@font-face {
-  font-family: "font_h1";
-  src: url("/font/SinkinSans-500Medium.otf");
+/* @font-face{
+    font-family:'font_h1';
+    src:url('/font/SinkinSans-500Medium.otf');
 }
-@font-face {
-  font-family: "1menu1";
-  src: url("/font/Milkshake.otf");
-  src: url("/font/Milkshake.ttf");
+@font-face{
+    font-family:'1menu1';
+    src:url('/font/Milkshake.otf');
+    src:url('/font/Milkshake.ttf');
 }
-@font-face {
-  font-family: "1menu2";
-  src: url("/font/2-Questa_Regular.otf");
+@font-face{   
+    font-family:'1menu2';
+    src:url('/font/2-Questa_Regular.otf')
 }
-@font-face {
-  font-family: "1menu3";
-  src: url("/font/AlexBrush-Regular.ttf");
+@font-face{   
+    font-family:'1menu3';
+    src:url('/font/AlexBrush-Regular.ttf');
 }
-@font-face {
-  font-family: "1menu4";
-  src: url("/font/KaushanScript-Regular.otf");
+@font-face{   
+    font-family:'1menu4';
+    src:url('/font/KaushanScript-Regular.otf');
 }
-@font-face {
-  font-family: "menu";
-  src: url("/font/Amble-Italic.ttf");
+@font-face{   
+    font-family:'menu';
+    src:url('/font/Amble-Italic.ttf');
 }
+*/
 /* google font */
+@font-face {
+  font-family: "courgette";
+  src: url("/font/Courgette_TextMenu1/Courgette-Regular.ttf");
+}
+@font-face {
+  font-family: "kalam";
+  src: url("/font/Kalam_Menu1/Kalam-Bold.ttf");
+}
+@font-face {
+  font-family: "lobster";
+  src: url("/font/Lobster_Two_TextMenu2/LobsterTwo-Regular.ttf");
+}
 @font-face {
   font-family: "baskerville";
   src: url("/font/Libre_Baskerville-Menu_2/LibreBaskerville-Bold.ttf");
 }
-.text_menu1 {
-  font-family: "1menu1";
+@font-face {
+  font-family: "alex_brush";
+  src: url("/font/Alex_Brush_TextMenu3/AlexBrush-Regular.ttf");
 }
-
-.text_menu3 {
-  font-family: "1menu3";
-  font-size: 1.7rem;
+@font-face {
+  font-family: "kaushan";
+  src: url("/font/Kaushan_Script_TextMenu4/KaushanScript-Regular.ttf");
 }
-
-.menu3 {
-  color: #0887fb;
+@font-face {
+  font-family: "Indie_Flower";
+  src: url("/font/Indie_Flower_Menu3-4/IndieFlower-Regular.ttf");
 }
-
-.text_menu4 {
-  font-family: "1menu4";
+@font-face {
+  font-family: "Fira_Sans";
+  src: url("/font/Fira_Sans_body/FiraSans-Regular.ttf");
 }
-
-.menu4 {
-  color: #72bf56;
-}
-
-.font_menu {
-  font-family: "menu";
-}
-
 body {
   margin: 0;
   padding: 0;
-  font-family: "font_h1";
+  font-family: "Fira_Sans";
 }
 
 header {
@@ -67,7 +71,14 @@ header {
 }
 header h1 {
   margin: 0;
-  font-size: 1.6rem;
+  padding: 1vh 0 1vh;
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 section {
@@ -91,6 +102,12 @@ section i {
 .one h2 {
   font-size: 1.4rem;
 }
+.one .text_menu1 {
+  font-family: "courgette";
+}
+.one .menu1 {
+  font-family: "kalam";
+}
 
 .two {
   background-color: #fff5fe;
@@ -101,7 +118,8 @@ section i {
   -webkit-text-fill-color: transparent;
 }
 .two .text_menu2 {
-  font-family: "1menu2";
+  font-family: "lobster";
+  font-size: 1.3rem;
 }
 .two .menu2 {
   font-family: "baskerville";
@@ -116,6 +134,15 @@ section i {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.three .text_menu3 {
+  font-family: "alex_brush";
+  font-size: 1.7rem;
+}
+.three .menu3 {
+  color: #0887fb;
+  font-family: "Indie_Flower";
+  font-weight: bold;
+}
 
 .four {
   background-color: #fdfffd;
@@ -124,6 +151,14 @@ section i {
   background: -webkit-linear-gradient(right, #bfff7e, #42973c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.four .text_menu4 {
+  font-family: "kaushan";
+}
+.four .menu4 {
+  color: #72bf56;
+  font-family: "Indie_Flower";
+  font-weight: bold;
 }
 
 .style {
@@ -145,35 +180,33 @@ section i {
 }
 
 #prochainement {
+  display: flex;
+  justify-content: center;
   background-color: #579c87;
   color: #fdcb46;
-  border-radius: 10px;
-  width: 280px;
-  text-align: center;
-  margin: auto;
+  border-radius: 12px;
   margin-bottom: 8vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
   font-size: 1.3rem;
 }
 #prochainement p {
-  padding: 1vh 0 1vh 0;
   position: relative;
+  margin: 1.1vh 0 1.1vh 0;
 }
-#prochainement #dot_1 {
-  position: absolute;
-  bottom: 8px;
-  left: 235px;
+#prochainement .dot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 0.5vw;
+}
+#prochainement .dot #dot_1 {
   animation: pointier 600ms infinite;
 }
-#prochainement #dot_2 {
-  position: absolute;
-  bottom: 8px;
-  left: 241px;
+#prochainement .dot #dot_2 {
   animation: pointier 600ms 100ms infinite;
 }
-#prochainement #dot_3 {
-  position: absolute;
-  bottom: 8px;
-  left: 247px;
+#prochainement .dot #dot_3 {
   animation: pointier 600ms 200ms infinite;
 }
 
