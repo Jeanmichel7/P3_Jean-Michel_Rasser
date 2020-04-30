@@ -1,37 +1,7 @@
-/* @font-face{
-    font-family:'font_h1';
-    src:url('/font/SinkinSans-500Medium.otf');
-}
-@font-face{
-    font-family:'1menu1';
-    src:url('/font/Milkshake.otf');
-    src:url('/font/Milkshake.ttf');
-}
-@font-face{   
-    font-family:'1menu2';
-    src:url('/font/2-Questa_Regular.otf')
-}
-@font-face{   
-    font-family:'1menu3';
-    src:url('/font/AlexBrush-Regular.ttf');
-}
-@font-face{   
-    font-family:'1menu4';
-    src:url('/font/KaushanScript-Regular.otf');
-}
-@font-face{   
-    font-family:'menu';
-    src:url('/font/Amble-Italic.ttf');
-}
-*/
 /* google font */
 @font-face {
   font-family: "Fira_Sans";
   src: url("/font/Fira_Sans_body/FiraSans-Regular.ttf");
-}
-@font-face {
-  font-family: "courgette";
-  src: url("/font/Courgette_TextMenu1/Courgette-Regular.ttf");
 }
 @font-face {
   font-family: "kalam";
@@ -50,12 +20,12 @@
   src: url("/font/Alex_Brush_TextMenu3/AlexBrush-Regular.ttf");
 }
 @font-face {
-  font-family: "kaushan";
-  src: url("/font/Kaushan_Script_TextMenu4/KaushanScript-Regular.ttf");
-}
-@font-face {
   font-family: "Indie_Flower";
   src: url("/font/Indie_Flower_Menu3-4/IndieFlower-Regular.ttf");
+}
+@font-face {
+  font-family: "kaushan";
+  src: url("/font/Kaushan_Script_TextMenu4/KaushanScript-Regular.ttf");
 }
 body {
   margin: 0;
@@ -103,7 +73,7 @@ section i {
   font-size: 1.4rem;
 }
 .one .text_menu1 {
-  font-family: "courgette";
+  font-family: "Courgette", cursive;
 }
 .one .menu1 {
   font-family: "kalam";
