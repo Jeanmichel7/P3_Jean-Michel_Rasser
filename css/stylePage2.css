@@ -1,16 +1,19 @@
 @font-face{
-    font-family:'font_h1';
-    src:url('/font/SinkinSans-500Medium.otf');
+    font-family: 'Fira_Sans';
+    src:url('/font/Fira_Sans_body/FiraSans-Regular.ttf')
 }
-@font-face{   
-    font-family:'1menu2';
-    src:url('/font/2-Questa_Regular.otf')
+@font-face{
+    font-family:'lobster';
+    src:url('/font/Lobster_Two_TextMenu2/LobsterTwo-Regular.ttf')
 }
+
+
+
 body{
     margin:0;
     padding:0;
 
-    font-family: 'font_h1';
+    font-family: 'Fira_Sans';
 }
 header{
     background-color:#579c87;
@@ -25,7 +28,7 @@ h1{
     margin:0;
     padding-top:2vh;
 
-    font-size:1.6rem;
+    font-size:2rem;
 }
 h1 a{
     text-decoration: none;
@@ -33,10 +36,9 @@ h1 a{
 }
 
 h2{
-    font-size:2rem;
+    font-size:2.2rem;
     margin-top:2vh;
     margin-bottom:10vh;
-    font-family:'1menu2';
 
     background: -webkit-linear-gradient(right, #905bfd ,#d8852e);
     -webkit-background-clip: text;
@@ -92,7 +94,7 @@ h3:hover + .sousligner{
 
 
 main{
-    font-family:'1menu2';
+    font-family:'lobster';
 
     margin:2vh 8vw 8vh 8vw;
     padding: 5vh 6vw 2vh 6vw;
@@ -172,6 +174,9 @@ footer a:hover{
 }
 
 @media screen and (max-width:345px){
+    h1{
+        padding: 3vh 0 3vh 0;
+    }
     h2{
         font-size:1.5rem;
     }

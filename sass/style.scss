@@ -31,6 +31,11 @@
 
 
 /* google font */
+@font-face{
+    font-family: 'Fira_Sans';
+    src:url('/font/Fira_Sans_body/FiraSans-Regular.ttf')
+}
+
 
 @font-face{
     font-family:'courgette';
@@ -62,10 +67,6 @@
 @font-face{
     font-family: 'Indie_Flower';
     src:url('/font/Indie_Flower_Menu3-4/IndieFlower-Regular.ttf')
-}
-@font-face{
-    font-family: 'Fira_Sans';
-    src:url('/font/Fira_Sans_body/FiraSans-Regular.ttf')
 }
 
 
@@ -115,8 +116,6 @@ section{
         -webkit-text-fill-color: transparent;
     }
 }
-
-
 
 
 
