@@ -30,7 +30,7 @@ h2{
     font-family: 'Kaushan Script', cursive;
 
     background: -webkit-linear-gradient(right, #bfff7e,#42973c);
-    background-clip: text;
+    background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

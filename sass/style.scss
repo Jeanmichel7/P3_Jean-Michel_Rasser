@@ -20,7 +20,7 @@ header{
 }
 
 main{
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -36,7 +36,7 @@ section{
     
     i{
         background: -webkit-linear-gradient(left,#f05160, #f7c727);
-        background-clip: text;
+        background-clip: initial;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -48,7 +48,7 @@ section{
 
 .one {
     background-color:#fcdfdb;
-    color:#3c1218; 
+    color:#3c1218;
 
     h2{
         font-size:1.4rem;
@@ -67,7 +67,7 @@ section{
     
     h2{
         background: -webkit-linear-gradient(right, #905bfd ,#d8852e);
-        background-clip: text;
+        background-clip: initial;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -87,7 +87,7 @@ section{
 
     h2{
         background: -webkit-linear-gradient(right, #91c7fd,#0431df);
-        background-clip: text;
+        background-clip: initial;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -108,7 +108,7 @@ section{
 
     h2{
         background: -webkit-linear-gradient(right, #bfff7e,#42973c);
-        background-clip: text;
+        background-clip: initial;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -250,15 +250,9 @@ footer{
     }
 }
 
-
-
-
-
-
-
 @media screen and (min-width:600px){   /* > 600px */
     .container{
-       display:flex;
+       display: flex;
        flex-wrap:wrap;
        justify-content: center;
     }
@@ -274,9 +268,6 @@ footer{
         align-items: center;
     }
 }
-
-
-
 
 @media screen and (min-width:1024px){
      section{

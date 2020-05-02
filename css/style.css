@@ -32,7 +32,7 @@ section p {
 }
 section i {
   background: -webkit-linear-gradient(left, #f05160, #f7c727);
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -56,7 +56,7 @@ section i {
 }
 .two h2 {
   background: -webkit-linear-gradient(right, #905bfd, #d8852e);
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -74,7 +74,7 @@ section i {
 }
 .three h2 {
   background: -webkit-linear-gradient(right, #91c7fd, #0431df);
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -93,7 +93,7 @@ section i {
 }
 .four h2 {
   background: -webkit-linear-gradient(right, #bfff7e, #42973c);
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
