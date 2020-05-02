@@ -61,7 +61,6 @@ section{
     }
 }
 
-
 .two {
     background-color:#fff5fe;
     
@@ -80,7 +79,6 @@ section{
         color:#d8852e; 
     }
 }
-
 
 .three {
     background-color:#f9f9f9;
@@ -121,13 +119,6 @@ section{
         font-weight: bold; 
     }
 }
-
-
-
-
-
-
-
 
 .style{
     text-align: center;
@@ -220,7 +211,7 @@ footer{
 
 
 
-
+/* Media Queries */
 
 @media screen and (max-width:345px){
     h1{
@@ -253,14 +244,14 @@ footer{
 @media screen and (min-width:600px){   /* > 600px */
     .container{
        display: flex;
-       flex-wrap:wrap;
        justify-content: center;
     }
 
     section{
-        width:40%;
-    }   
-
+        width:40vw;
+        max-width:400px;
+    }
+  
     h1{
         height: 60px;
         display:flex;
@@ -269,18 +260,13 @@ footer{
     }
 }
 
-@media screen and (min-width:1024px){
-     section{
-         width:19%;
-     }
-}
 
 
 
 
 
 
-
+/* Animation */
 
 @keyframes pointier{
     0%{
