@@ -146,13 +146,13 @@ section i {
   margin-left: 0.5vw;
 }
 #prochainement .dot #dot_1 {
-  animation: pointier 600ms infinite;
+  animation: pointier 800ms infinite ease-in-out;
 }
 #prochainement .dot #dot_2 {
-  animation: pointier 600ms 100ms infinite;
+  animation: pointier 800ms 150ms infinite ease-in-out;
 }
 #prochainement .dot #dot_3 {
-  animation: pointier 600ms 200ms infinite;
+  animation: pointier 800ms 300ms infinite ease-in-out;
 }
 
 footer {
@@ -227,7 +227,7 @@ footer a:hover {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
   }
   100% {
     transform: translateY(0);
@@ -235,16 +235,16 @@ footer a:hover {
 }
 @keyframes wizz {
   0% {
-    transform: translateX(5px);
+    transform: translateX(4px);
   }
   20% {
-    transform: translateX(-5px);
+    transform: translateX(-4px);
   }
   50% {
-    transform: translateX(3px);
+    transform: translateX(2px);
   }
   75% {
-    transform: translateX(-3px);
+    transform: translateX(-4px);
   }
   100% {
     transform: translateX(0);
