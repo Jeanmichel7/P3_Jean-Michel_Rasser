@@ -117,10 +117,11 @@ section i {
   flex-direction: column;
   justify-content: center;
 }
-.style .zoom {
+
+.zoom {
   transition: transform 400ms ease-in-out;
 }
-.style .zoom:hover {
+.zoom:hover {
   transform: scale(1.3);
 }
 
@@ -203,7 +204,6 @@ footer a:hover {
   }
 }
 @media screen and (min-width: 600px) {
-  /* > 600px */
   .container {
     display: flex;
     justify-content: center;

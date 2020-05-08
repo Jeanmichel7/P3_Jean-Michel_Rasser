@@ -133,16 +133,15 @@ section{
 
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
+}
 
+.zoom{
+    transition:transform 400ms ease-in-out;
 
-    .zoom{
-        transition:transform 400ms ease-in-out;
-    
-        &:hover{
-        transform:scale(1.3);
-       }
-    } 
+    &:hover{
+    transform:scale(1.3);
+   }
 }
 
 #prochainement{
@@ -241,7 +240,7 @@ footer{
     }
 }
 
-@media screen and (min-width:600px){   /* > 600px */
+@media screen and (min-width:600px){   
     .container{
        display: flex;
        justify-content: center;
