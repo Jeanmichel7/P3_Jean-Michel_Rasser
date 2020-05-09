@@ -67,8 +67,8 @@ section{
     
     h2{
         background: -webkit-linear-gradient(right, #905bfd ,#d8852e);
-        background-clip: text;
-        -webkit-background-clip: text;
+        background-clip:initial;
+        -webkit-background-clip: initial;
         -webkit-text-fill-color: transparent;
     }
     .text_menu2{
@@ -99,8 +99,7 @@ section{
         color:#0887fb;  
         font-family: 'Indie Flower', cursive;
         font-weight: bold; 
-    }
-    
+    }   
 }
 
 .four {
