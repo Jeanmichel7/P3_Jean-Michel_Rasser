@@ -32,7 +32,7 @@ section p {
 }
 section i {
   background: -webkit-linear-gradient(left, #f05160, #f7c727);
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -56,7 +56,7 @@ section i {
 }
 .two h2 {
   background: -webkit-linear-gradient(right, #905bfd, #d8852e);
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -74,7 +74,7 @@ section i {
 }
 .three h2 {
   background: -webkit-linear-gradient(right, #91c7fd, #0431df);
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -93,7 +93,7 @@ section i {
 }
 .four h2 {
   background: -webkit-linear-gradient(right, #bfff7e, #42973c);
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -117,10 +117,11 @@ section i {
   flex-direction: column;
   justify-content: center;
 }
-.style .zoom {
+
+.zoom {
   transition: transform 400ms ease-in-out;
 }
-.style .zoom:hover {
+.zoom:hover {
   transform: scale(1.3);
 }
 
@@ -146,13 +147,13 @@ section i {
   margin-left: 0.5vw;
 }
 #prochainement .dot #dot_1 {
-  animation: pointier 600ms infinite;
+  animation: pointier 800ms infinite ease-in-out;
 }
 #prochainement .dot #dot_2 {
-  animation: pointier 600ms 100ms infinite;
+  animation: pointier 800ms 150ms infinite ease-in-out;
 }
 #prochainement .dot #dot_3 {
-  animation: pointier 600ms 200ms infinite;
+  animation: pointier 800ms 300ms infinite ease-in-out;
 }
 
 footer {
@@ -175,6 +176,7 @@ footer a:hover {
   animation: wizz 400ms;
 }
 
+/* Media Queries */
 @media screen and (max-width: 345px) {
   h1 {
     font-size: 0.5rem;
@@ -202,15 +204,14 @@ footer a:hover {
   }
 }
 @media screen and (min-width: 600px) {
-  /* > 600px */
   .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
   }
 
   section {
-    width: 40%;
+    width: 40vw;
+    max-width: 400px;
   }
 
   h1 {
@@ -220,17 +221,13 @@ footer a:hover {
     align-items: center;
   }
 }
-@media screen and (min-width: 1024px) {
-  section {
-    width: 19%;
-  }
-}
+/* Animation */
 @keyframes pointier {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
   }
   100% {
     transform: translateY(0);
@@ -238,16 +235,16 @@ footer a:hover {
 }
 @keyframes wizz {
   0% {
-    transform: translateX(5px);
+    transform: translateX(4px);
   }
   20% {
-    transform: translateX(-5px);
+    transform: translateX(-4px);
   }
   50% {
-    transform: translateX(3px);
+    transform: translateX(2px);
   }
   75% {
-    transform: translateX(-3px);
+    transform: translateX(-4px);
   }
   100% {
     transform: translateX(0);

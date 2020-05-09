@@ -110,7 +110,7 @@ section{
 
 i{
     background: -webkit-linear-gradient(left,#f05160, #f6916a);
-    background-clip: text;
+    background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

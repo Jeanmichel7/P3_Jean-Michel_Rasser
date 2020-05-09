@@ -20,7 +20,7 @@ header{
 }
 
 main{
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -36,7 +36,7 @@ section{
     
     i{
         background: -webkit-linear-gradient(left,#f05160, #f7c727);
-        background-clip: text;
+        background-clip: initial;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -48,7 +48,7 @@ section{
 
 .one {
     background-color:#fcdfdb;
-    color:#3c1218; 
+    color:#3c1218;
 
     h2{
         font-size:1.4rem;
@@ -61,14 +61,13 @@ section{
     }
 }
 
-
 .two {
     background-color:#fff5fe;
     
     h2{
         background: -webkit-linear-gradient(right, #905bfd ,#d8852e);
-        background-clip:initial;
-        -webkit-background-clip: initial;
+        background-clip: initial;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     .text_menu2{
@@ -81,13 +80,12 @@ section{
     }
 }
 
-
 .three {
     background-color:#f9f9f9;
 
     h2{
         background: -webkit-linear-gradient(right, #91c7fd,#0431df);
-        background-clip: text;
+        background-clip: initial;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -107,7 +105,7 @@ section{
 
     h2{
         background: -webkit-linear-gradient(right, #bfff7e,#42973c);
-        background-clip: text;
+        background-clip: initial;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -120,13 +118,6 @@ section{
         font-weight: bold; 
     }
 }
-
-
-
-
-
-
-
 
 .style{
     text-align: center;
@@ -141,16 +132,15 @@ section{
 
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
+}
 
+.zoom{
+    transition:transform 400ms ease-in-out;
 
-    .zoom{
-        transition:transform 400ms ease-in-out;
-    
-        &:hover{
-        transform:scale(1.3);
-       }
-    } 
+    &:hover{
+    transform:scale(1.3);
+   }
 }
 
 #prochainement{
@@ -180,15 +170,15 @@ section{
         margin-left:0.5vw;
 
         #dot_1{
-            animation:pointier 600ms infinite;
+            animation:pointier 800ms infinite ease-in-out;
         }
     
         #dot_2{
-            animation:pointier 600ms  100ms infinite;
+            animation:pointier 800ms  150ms infinite ease-in-out;
         }
     
         #dot_3{
-            animation:pointier 600ms 200ms infinite;
+            animation:pointier 800ms 300ms infinite ease-in-out;
         }
     }
 }
@@ -219,7 +209,7 @@ footer{
 
 
 
-
+/* Media Queries */
 
 @media screen and (max-width:345px){
     h1{
@@ -245,27 +235,21 @@ footer{
         #dot_3{
             left:156px;
             bottom:5px;
-        }   
+        }
     }
 }
 
-
-
-
-
-
-
-@media screen and (min-width:600px){   /* > 600px */
+@media screen and (min-width:600px){   
     .container{
-       display:flex;
-       flex-wrap:wrap;
+       display: flex;
        justify-content: center;
     }
 
     section{
-        width:40%;
-    }   
-
+        width:40vw;
+        max-width:400px;
+    }
+  
     h1{
         height: 60px;
         display:flex;
@@ -277,25 +261,17 @@ footer{
 
 
 
-@media screen and (min-width:1024px){
-     section{
-         width:19%;
-     }
-}
 
 
 
-
-
-
-
+/* Animation */
 
 @keyframes pointier{
     0%{
         transform:translateY(0);
     }
     50%{
-        transform: translateY(-5px);
+        transform: translateY(-4px);
     }
     100%{
         transform: translateY(0);
@@ -304,16 +280,16 @@ footer{
 
 @keyframes wizz{
     0%{
-        transform: translateX(5px);
+        transform: translateX(4px);
     }
     20%{
-        transform:translateX(-5px);
+        transform:translateX(-4px);
     }
     50%{
-        transform: translateX(3px);
+        transform: translateX(2px);
     }
     75%{
-        transform: translateX(-3px);
+        transform: translateX(-4px);
     }
     100%{
         transform: translateX(0);

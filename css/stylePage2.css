@@ -32,7 +32,7 @@ h2{
     font-family:'lobster';
 
     background: -webkit-linear-gradient(right, #905bfd ,#d8852e);
-    background-clip: text;
+    background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
