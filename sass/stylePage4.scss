@@ -1,43 +1,54 @@
 body{
     margin:0;
-    padding:0;
 
     font-family: 'Fira Sans', sans-serif;
 }
+
 header{
     background-color:#579c87;
-    color:#fdcb46;
 
-    font-size:1.2rem;
     text-align:center;
+    height:94px;
 
     h1{
         height:7vh;
         margin:0;
-        padding-top:2vh;
+        padding-top:2.5vh;
     
-        font-size:2rem;
+        font-size:2.4rem;
     }
+
     h1 a{
         text-decoration: none;
         color:#fdcb46;
     }
+    
 }
 
+aside{
+    display: flex;
+    justify-content: center;
+
+    font-size:1.5rem;
+    font-weight: bold;
+
+    margin-top:0.9vh;
+
+    text-shadow: 0 0 1.2px;
+
+    p{
+        margin-bottom:1.5vh;
+    }
+}
 
 main{
-    
-    margin:2vh 8vw 8vh 8vw;
-    padding: 5vh 6vw 2vh 6vw;
+    margin:0 8vw 0 8vw;
+    padding: 4.5vh 3vw 2vh 3vw;
 
     box-shadow: 0px 0px 5px 5px #ededed;
-
-    background-color: #fdfffd;
-    font-family: 'Kalam', cursive;
+    background-color: #fdfffd; 
     font-size:0.9rem;
-}
-section{
-    margin-bottom:8vh;
+    font-family: 'Kalam', cursive;
 }
 
 
@@ -47,10 +58,10 @@ section{
 
     h2{
         font-size:3rem;
-        margin-top:2vh;
-        margin-bottom:8vh;
-        font-family: 'Kaushan Script', cursive;
+        margin-top:1.3vh;
+        margin-bottom:5.2vh;
     
+        font-family: 'Kaushan Script', cursive;
         background: -webkit-linear-gradient(right, #bfff7e,#42973c);
         background-clip: initial;
         -webkit-background-clip: text;
@@ -61,57 +72,87 @@ section{
 
 
 
-.container{
-    display:flex;
-    justify-content: space-between;
-
-    .trait_gauche{
-        height: 6px;
-        width:20vw;
-        margin-top:3px;
-        background: -webkit-linear-gradient(right, #bfff7e,#42973c);
-    }
-    .titresouligne{
+section{
+    .container{
         display:flex;
-        flex-direction:column;
-        position:relative;
-        bottom:25px;
+        justify-content: space-between;
+
+        color:black;
+        margin-bottom: 3px;
+        
+        .traitGauche,.traitDroit{
+            width:27vw;
+            height:22px;
+
+            margin:0;
+            padding:0;
+        }
 
         h3{
-            font-size:1.1rem;
             cursor:pointer;
-            margin-bottom:2px;
-        }
-        .sousligner{
-            height:3px;
-            width:100%;
-            background-color:#30833b;
-            
-            transform: scaleX(0);
-            transition:transform 500ms ease-in-out;
-        }
-        h3:hover + .sousligner{
-            transform:scaleX(1);
-            transform-origin: left;
-        }
-    }
-    .trait_droite{
-        height: 6px;
-        width:20vw;
-        margin-top:3px;
-        background: -webkit-linear-gradient(right,#42973c, #bfff7e);
-    }
 
+            font-size:0.9rem;
+
+            margin:4px 0 2px 0;
+            padding:0;
+        }
+    }
+       
+    .sousligner{
+        background-color:#42973c;
+    }
 
     .menu{
         display:flex;
         justify-content: space-between;
-    
-        .gras{
-            font-weight: bold;
+
+        font-size:0.75rem;
+
+        margin:0 7vw 0 7vw;
+        padding:0;
+
+        p{
+            margin:4px 0 4px;
         }
     }
+
+    .dernier{
+        padding-bottom:50px;
+    }
+    .gras{
+        font-weight: bold;
+    }
+    .menu:last-child{
+        margin-bottom:26px;
+    }
 }
+
+
+
+
+
+.titresouligne{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:6px;
+
+    h3:hover + .sousligner{
+        transform:scaleX(1);
+        transform-origin: left;
+    }
+
+    .sousligner{
+        height:3px;
+        width:100%;
+    
+        transform: scaleX(0);
+        transition:transform 500ms ease-in-out;
+
+        padding:0;
+        margin:0;
+    }
+}
+
 
 
 
@@ -120,7 +161,7 @@ footer{
     color:#fdcb46;
     display:flex;
     justify-content: space-between;
-
+    
     position:fixed;
     bottom:0;
 
@@ -128,48 +169,79 @@ footer{
     height: 6vh;
     align-items:center;
 
+    font-size: 1.3rem;;
+
     a{
         text-decoration: none;
         color:#fdcb46;
         padding: 0 2vw 0 2vw;
     }
-    
-    a:hover{
-        animation: wizz 400ms;
+
+    :first-child{
+        animation: wizzinverse 500ms infinite;
     }
-    
+    :last-child{
+        animation: wizz 500ms infinite;
+    }
 }
+
 
 
 @keyframes wizz{
     0%{
-        transform: translateX(5px);
+        transform: translateX(0px);
     }
-    20%{
-        transform:translateX(-5px);
+    25%{
+        transform:translateX(4px);
     }
     50%{
-        transform: translateX(3px);
+        transform: translateX(0);
     }
     75%{
-        transform: translateX(-3px);
+        transform: translateX(-4px);
     }
     100%{
-        transform: translateX(0);
+        transform: translateX(4);
     }
 }
 
-@media screen and (max-width:345px){
-    h1{
-        padding: 3vh 0 3vh 0;
+@keyframes wizzinverse{
+    0%{
+        transform: translateX(0px);
     }
+    25%{
+        transform:translateX(-4px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+    100%{
+        transform: translateX(4);
+    }
+}
+
+
+
+
+
+@media screen and (max-width:345px){
+
+    h1{
+        padding:3vh 0 3vh 0;
+    }
+
     h2{
         font-size:1.5rem;
+        margin-bottom:8vh;
     }
+    
     h3{
         font-size:1rem;
-        margin-top:5px;
-        padding: 0 3vw 0 3vw;
+        margin-top:20px;
+        padding: 5px 5px 5px 5px;
         text-align: center;
     }
     footer a{
@@ -178,11 +250,6 @@ footer{
     #prochainement{
         font-size:0.8rem;
         width:180px;   
-    }
-    .pied{
-        display:flex;
-        flex-direction: column;
-        text-align:center;
     }
     main{
         margin:0 0 20px 0;
