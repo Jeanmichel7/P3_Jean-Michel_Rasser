@@ -46,33 +46,35 @@ aside{
 
 main{
     margin:0 10vw 0 10vw;
-    padding: 4.5vh 8vw 2vh 8vw;
+    padding: 2.8vh 8vw 2vh 8vw;
 
     box-shadow: 0px 0px 5px 5px #ededed;
     background-color:#fcdfdb;
     font-size:0.9rem;
-}
 
-
-
-.entete{
-    text-align: center;
-
-    i{
-        background: -webkit-linear-gradient(left,#f05160, #f6916a);
-        background-clip: initial;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }    
-
-    h2{
-        font-size:1.4rem;
-        margin-top:0;
-        margin-bottom:3.6vh;
+    .entete{
+        text-align: center;
     
-        font-family: 'Courgette', cursive;
+        i{
+            background: -webkit-linear-gradient(left,#f05160, #f6916a);
+            background-clip: initial;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }    
+    
+        h2{
+            font-size:1.4rem;
+            margin-top:0vh;
+            margin-bottom:3vh;
+        
+            font-family: 'Courgette', cursive;
+        }
     }
 }
+
+
+
+
 
 
 section{
@@ -90,13 +92,13 @@ section{
         display:flex;
         justify-content: space-between;
 
-        font-size:0.65rem;
+        font-size:0.7rem;
 
         margin:0;
         padding:0;
 
         p{
-            margin:6px 0 6px;
+            margin:3px 0 4px;
         }
     }
     .gras{
@@ -107,7 +109,7 @@ section{
     }
 
     .menu:last-child{
-        margin-bottom:38px;
+        margin-bottom:36px;
     }
 }
 
@@ -115,16 +117,15 @@ section{
 .titresouligne{
     display:flex;
     flex-direction:column;
-    margin-bottom:6px;
-
+    margin-bottom:2px;
 
     h3{
         font-size:0.9rem;
-        font-style: italic;
         cursor:pointer;
         margin:0;
+        font-family: 'Kalam', cursive;
     }    
-
+    
     .sousligner{
         height:3px;
         width:100%;
@@ -140,35 +141,33 @@ section{
     }
 }
 
-
-
 .pied{
     display:flex;
     justify-content:center;
     align-items:center;
 
-    padding-bottom:2vh;
+    padding:0 0 1vh;
 
-    p{
-        margin-left:10px;
-        font-size:1.1rem;
-        font-family: 'Courgette', cursive;
-        font-weight: bold;
-
-        margin:0;
-        padding:0 0 0 1vw;
-    }
     i{
         background: -webkit-linear-gradient(left,#f05160, #cea624);
         background-clip: initial;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
-        margin-bottom:0.2vh;
+        margin-bottom:0.5vh;
+    }
+    p{
+        font-size:1.1rem;
+        font-weight: bold;
+
+        margin:0;
+        padding-left:1vw;
     }
 }
 
-
+p{
+    font-family: 'Kalam', cursive;
+}
 
 footer{
     background-color:#579c87;
@@ -255,7 +254,6 @@ footer{
 
         h2{
             font-size:1.5rem;
-            margin-bottom:8vh;
         }
 
         h3{
