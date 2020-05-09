@@ -43,7 +43,7 @@ section i {
   width: 50vw;
   min-width: 210px;
   height: 30vh;
-  box-shadow: 0px 0px 3px 3px #ededed;
+  box-shadow: 0px 0px 6px 4px #ededed;
   display: flex;
   flex-direction: column;
   justify-content: center;
