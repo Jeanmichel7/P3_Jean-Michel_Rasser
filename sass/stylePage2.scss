@@ -55,9 +55,9 @@ main{
     text-align: center;
 
     h2{
-        font-size:1.4rem;
+        font-size:1.5rem;
         margin-top:3.2vh;
-        margin-bottom:6.8vh;
+        margin-bottom:7vh;
     
         font-family: 'Libre Baskerville', serif;
         background: -webkit-linear-gradient(left,#e38913, #8f5bfe);
@@ -101,25 +101,25 @@ section{
         display:flex;
         justify-content: space-between;
 
-        font-size:0.6rem;
+        font-size:0.72rem;
 
-        margin:0 10vw 0 10vw;
+        margin:0 8.5vw 0 8.5vw;
         padding:0;
 
         p{
-            margin:7px 0 7px;
+            margin:6px 0 6px;
         }
     }
     
     .dernier{
-        padding-bottom:45px;
+        padding-bottom:40px;
     }
     .gras{
         font-weight: bold;
     }
     
     .menu:last-child{
-        margin-bottom:37px;
+        margin-bottom:45px;
     }
 }
 
