@@ -172,16 +172,22 @@ footer :last-child {
   }
 }
 @media screen and (max-width: 345px) {
-  h1 {
-    padding: 3vh 0 3vh 0;
+  header {
+    height: 80px;
   }
 
-  h2 {
-    font-size: 1.5rem;
+  aside {
+    margin-bottom: 15px;
+  }
+
+  main {
+    margin: 0 0 80px 0;
+  }
+  main h2 {
+    font-size: 1rem;
     margin-bottom: 8vh;
   }
-
-  h3 {
+  main h3 {
     font-size: 1rem;
     margin-top: 20px;
     padding: 5px 5px 5px 5px;
@@ -189,16 +195,7 @@ footer :last-child {
   }
 
   footer a {
-    font-size: 0.7rem;
-  }
-
-  #prochainement {
-    font-size: 0.8rem;
-    width: 180px;
-  }
-
-  main {
-    margin: 0 0 20px 0;
+    font-size: 1rem;
   }
 }
 

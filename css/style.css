@@ -153,13 +153,13 @@ section i {
   margin-left: 0.5vw;
 }
 #prochainement .dot #dot_1 {
-  animation: pointier 800ms infinite ease-in-out;
+  animation: pointier 700ms infinite ease-in-out;
 }
 #prochainement .dot #dot_2 {
-  animation: pointier 800ms 150ms infinite ease-in-out;
+  animation: pointier 700ms 150ms infinite ease-in-out;
 }
 #prochainement .dot #dot_3 {
-  animation: pointier 800ms 300ms infinite ease-in-out;
+  animation: pointier 700ms 300ms infinite ease-in-out;
 }
 
 footer {
@@ -188,6 +188,10 @@ footer :last-child {
 
 /* Media Queries */
 @media screen and (max-width: 345px) {
+  header {
+    height: 65px;
+  }
+
   h1 {
     font-size: 0.5rem;
   }
@@ -197,8 +201,9 @@ footer :last-child {
   }
 
   #prochainement {
-    font-size: 0.8rem;
-    width: 180px;
+    font-size: 1rem;
+    width: 170px;
+    margin-bottom: 50px;
   }
   #prochainement #dot_1 {
     left: 148px;
@@ -252,7 +257,7 @@ footer :last-child {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
   }
   100% {
     transform: translateY(0);

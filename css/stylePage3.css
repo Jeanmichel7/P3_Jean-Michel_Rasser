@@ -181,16 +181,25 @@ footer :last-child {
   }
 }
 @media screen and (max-width: 345px) {
-  h1 {
+  header {
+    height: 80px;
+  }
+  header h1 {
     padding: 3vh 0 3vh 0;
   }
 
-  h2 {
-    font-size: 1.5rem;
-    margin-bottom: 8vh;
+  aside {
+    margin-bottom: 15px;
   }
 
-  h3 {
+  main {
+    margin: 0 0 75px 0;
+  }
+  main h2 {
+    font-size: 1rem;
+    margin-bottom: 8vh;
+  }
+  main h3 {
     font-size: 1rem;
     margin-top: 20px;
     padding: 5px 5px 5px 5px;
@@ -198,16 +207,11 @@ footer :last-child {
   }
 
   footer a {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
-  #prochainement {
-    font-size: 0.8rem;
-    width: 180px;
-  }
-
-  main {
-    margin: 0 0 20px 0;
+  .traitGauche, .traitDroit {
+    margin-top: 10px;
   }
 }
 
