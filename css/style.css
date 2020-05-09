@@ -7,11 +7,11 @@ header {
   background-color: #579c87;
   color: #fdcb46;
   text-align: center;
-  height: 94px;
+  height: 90px;
 }
 header h1 {
   margin: 0;
-  padding-top: 1.7vh;
+  padding-top: 1vh;
   font-size: 2.4rem;
   color: #fdcb46;
 }
@@ -186,71 +186,6 @@ footer :last-child {
   animation: wizz 500ms infinite;
 }
 
-/* Media Queries */
-@media screen and (max-width: 345px) {
-  header {
-    height: 65px;
-  }
-
-  h1 {
-    font-size: 0.5rem;
-  }
-
-  footer a {
-    font-size: 0.7rem;
-  }
-
-  #prochainement {
-    font-size: 1rem;
-    width: 170px;
-    margin-bottom: 50px;
-  }
-  #prochainement #dot_1 {
-    left: 148px;
-    bottom: 5px;
-  }
-  #prochainement #dot_2 {
-    left: 152px;
-    bottom: 5px;
-  }
-  #prochainement #dot_3 {
-    left: 156px;
-    bottom: 5px;
-  }
-}
-@media screen and (min-width: 550px) {
-  .container {
-    justify-content: center;
-  }
-
-  .row {
-    display: flex;
-  }
-
-  .style {
-    height: 31vh;
-  }
-
-  section {
-    width: 30vw;
-    max-width: 400px;
-    margin-top: 1vw;
-    padding: 3.2vh 6vw 0 6vw;
-  }
-
-  #prochainement {
-    margin-top: 35px;
-    font-size: 1.4rem;
-    padding: 0 3vw 0 3vw;
-  }
-
-  h1 {
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
 /* Animation */
 @keyframes pointier {
   0% {
@@ -295,6 +230,71 @@ footer :last-child {
   }
   100% {
     transform: translateX(4);
+  }
+}
+/* Media Queries */
+@media screen and (max-width: 345px) {
+  header {
+    height: 65px;
+  }
+
+  h1 {
+    font-size: 0.5rem;
+  }
+
+  footer a {
+    font-size: 0.7rem;
+  }
+
+  #prochainement {
+    font-size: 1rem;
+    width: 170px;
+    margin-bottom: 50px;
+  }
+  #prochainement #dot_1 {
+    left: 148px;
+    bottom: 5px;
+  }
+  #prochainement #dot_2 {
+    left: 152px;
+    bottom: 5px;
+  }
+  #prochainement #dot_3 {
+    left: 156px;
+    bottom: 5px;
+  }
+}
+@media screen and (min-width: 550px) {
+  header {
+    padding-top: 10px;
+  }
+  header h1 {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    justify-content: center;
+  }
+  .container .row {
+    display: flex;
+  }
+  .container section {
+    width: 30vw;
+    max-width: 400px;
+    margin-top: 1vw;
+    padding: 3.2vh 6vw 0 6vw;
+  }
+  .container section .style {
+    height: 31vh;
+  }
+
+  #prochainement {
+    margin-top: 35px;
+    font-size: 1.4rem;
+    padding: 0 3vw 0 3vw;
   }
 }
 

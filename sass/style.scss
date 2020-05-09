@@ -9,11 +9,11 @@ header{
     color:#fdcb46;
 
     text-align:center;
-    height:94px;
+    height:90px;
 
     h1{
         margin:0;
-        padding-top:1.7vh;
+        padding-top:1vh;
     
         font-size:2.4rem;
     
@@ -235,83 +235,6 @@ footer{
 
 
 
-/* Media Queries */
-
-@media screen and (max-width:345px){
-    header{
-        height:65px;
-    }
-    h1{
-        font-size:0.5rem;
-    }
-
-    footer a{
-        font-size:0.7rem;
-    }
-
-    #prochainement{
-        font-size:1rem;
-        width:170px;
-        margin-bottom: 50px;
-
-        #dot_1{
-            left:148px;
-            bottom:5px;
-        }
-        #dot_2{
-            left:152px;
-            bottom:5px;
-        }
-        #dot_3{
-            left:156px;
-            bottom:5px;
-        }
-    }
-}
-
-@media screen and (min-width:550px){   
-    .container{
-       justify-content: center;
-    }
-
-    .row{
-        display:flex;
-    }
-
-    .style{
-
-        height:31vh;
-    }
-
-
-    section{
-        width:30vw;
-        max-width:400px;
-
-        margin-top:1vw;
-        padding: 3.2vh 6vw 0 6vw;
-        
-    }
-  
-    #prochainement{
-        margin-top:35px;
-        font-size:1.4rem;
-        padding:0 3vw 0 3vw;
-    }
-
-    h1{
-        height: 60px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
-
-
-
-
 
 /* Animation */
 
@@ -363,3 +286,85 @@ footer{
     }
 }
 
+
+
+
+/* Media Queries */
+
+@media screen and (max-width:345px){
+    header{
+        height:65px;
+    }
+    h1{
+        font-size:0.5rem;
+    }
+
+    footer a{
+        font-size:0.7rem;
+    }
+
+    #prochainement{
+        font-size:1rem;
+        width:170px;
+        margin-bottom: 50px;
+
+        #dot_1{
+            left:148px;
+            bottom:5px;
+        }
+        #dot_2{
+            left:152px;
+            bottom:5px;
+        }
+        #dot_3{
+            left:156px;
+            bottom:5px;
+        }
+    }
+}
+
+@media screen and (min-width:550px){
+    header{
+        padding-top:10px;
+        h1{
+            height: 60px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    
+    .container{
+       justify-content: center;
+
+       .row{
+        display:flex;
+    }
+       section{
+        width:30vw;
+        max-width:400px;
+
+        margin-top:1vw;
+        padding: 3.2vh 6vw 0 6vw;
+
+        .style{
+            height:31vh;
+        }
+    }
+}
+
+    
+    
+    #prochainement{
+        margin-top:35px;
+        font-size:1.4rem;
+        padding:0 3vw 0 3vw;
+    }
+
+    
+}
+
+@media screen and (min-width:900px){
+
+}
