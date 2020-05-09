@@ -9,13 +9,15 @@ header{
     background-color:#579c87;
     color:#fdcb46;
 
-    font-size:1.2rem;
-    text-align:center;
+    height: 86px;
 
+    text-align:center;
+    padding:4px 0 4px;
+    
     h1{
         margin:0;
         padding:1vh 0 1vh;
-        font-size:2rem;
+        font-size:2.2rem;
     }
 }
 
@@ -23,6 +25,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 section{
@@ -43,6 +46,24 @@ section{
 }
 
 
+.style{
+    text-align: center;
+    text-decoration: none;
+
+    
+    width:50vw;
+    min-width:200px;
+
+    height:30vh;
+
+    box-shadow: 0px 0px 3px 3px #ededed;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+
+    padding-bottom: 10px;
+}
 
 
 
@@ -50,14 +71,18 @@ section{
     background-color:#fcdfdb;
     color:#3c1218;
 
-    h2{
-        font-size:1.4rem;
+    i{
+        margin-top:30px;
     }
-    .text_menu1{
+    h2{
+        font-size:0.8rem;
+        margin:0;
         font-family: 'Courgette', cursive;
     }
     .menu1{
         font-family: 'Kalam', cursive;
+        font-size:1.6rem;
+        margin-top:10px;
     }
 }
 
@@ -69,14 +94,20 @@ section{
         background-clip: initial;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
-    .text_menu2{
+    
         font-family: 'Lobster Two', cursive;
-        font-size:1.3rem;
+        font-size:1rem;
+
+        padding:0;
     }
     .menu2{
         font-family: 'Libre Baskerville', serif;
         color:#d8852e; 
+
+        font-size:1.3rem;
+        font-weight: bold;
+
+        margin-bottom:0;
     }
 }
 
@@ -88,15 +119,19 @@ section{
         background-clip: initial;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
-    .text_menu3{
+    
         font-family: 'Alex Brush', cursive;
-        font-size:1.7rem;
+        font-size:1.4rem;
+
+        
+        margin-top:0;
     }
     .menu3{
         color:#0887fb;  
         font-family: 'Indie Flower', cursive;
         font-weight: bold; 
+
+        margin:0;
     }
     
 }
@@ -109,32 +144,21 @@ section{
         background-clip: initial;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
-    .text_menu4{
+    
         font-family: 'Kaushan Script', cursive;
+        font-size:1.1rem;
+
+        margin-top:0;
     }
     .menu4{
         color:#72bf56; 
         font-family: 'Indie Flower', cursive;
         font-weight: bold; 
+
+        margin:0;
     }
 }
 
-.style{
-    text-align: center;
-    text-decoration: none;
-
-    
-    height:40vh;
-    width:60vw;
-    min-width:250px;
-
-    box-shadow: 0px 0px 10px 3px #ededed;
-
-    display:flex;
-    flex-direction: column;
-    justify-content: center; 
-}
 
 .zoom{
     transition:transform 400ms ease-in-out;
@@ -150,13 +174,10 @@ section{
 
     background-color:#579c87;
     color:#fdcb46;
-    border-radius: 12px;
-
-    margin-bottom: 8vh;
-    padding-left:3vw;
-    padding-right:3vw;
+    border-radius: 10px;
 
     font-size: 1.3rem;
+    width:200px;
 
     p {
         position:relative;
@@ -194,17 +215,21 @@ footer{
     bottom:0;
 
     width: 100%;
-    height: 6vh;
+    height: 5.7vh;
     align-items:center;
 
     a{
         text-decoration: none;
         color:#fdcb46;
         padding: 0 2vw 0 2vw;
-    
-        &:hover{
-            animation: wizz 400ms;
-        }
+        font-size:1.2rem;   
+    }
+
+    :first-child{
+        animation: wizzinverse 500ms infinite;
+    }
+    :last-child{
+        animation: wizz 500ms infinite;
     }
 }
 
@@ -240,17 +265,36 @@ footer{
     }
 }
 
-@media screen and (min-width:600px){   
+@media screen and (min-width:550px){   
     .container{
-       display: flex;
        justify-content: center;
     }
 
+    .row{
+        display:flex;
+    }
+
+    .style{
+
+        height:31vh;
+    }
+
+
     section{
-        width:40vw;
+        width:30vw;
         max-width:400px;
+
+        margin-top:1vw;
+        padding: 3.2vh 6vw 0 6vw;
+        
     }
   
+    #prochainement{
+        margin-top:35px;
+        font-size:1.4rem;
+        padding:0 3vw 0 3vw;
+    }
+
     h1{
         height: 60px;
         display:flex;
@@ -281,19 +325,37 @@ footer{
 
 @keyframes wizz{
     0%{
-        transform: translateX(4px);
+        transform: translateX(0px);
     }
-    20%{
-        transform:translateX(-4px);
+    25%{
+        transform:translateX(4px);
     }
     50%{
-        transform: translateX(2px);
+        transform: translateX(0);
     }
     75%{
         transform: translateX(-4px);
     }
     100%{
+        transform: translateX(4);
+    }
+}
+
+@keyframes wizzinverse{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform:translateX(-4px);
+    }
+    50%{
         transform: translateX(0);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+    100%{
+        transform: translateX(4);
     }
 }
 
