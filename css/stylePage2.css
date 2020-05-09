@@ -218,5 +218,16 @@ footer :last-child {
     margin-top: 6px;
   }
 }
+@media screen and (min-width: 600px) {
+  .menu p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .menu p {
+    padding: 0 5vw 0 5vw;
+    font-size: 0.9rem;
+  }
+}
 
 /*# sourceMappingURL=stylePage2.css.map */
