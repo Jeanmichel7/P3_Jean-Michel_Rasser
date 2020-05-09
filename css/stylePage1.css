@@ -3,27 +3,11 @@ body {
   font-family: "Fira Sans", sans-serif;
 }
 
-.titre {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-main {
-  background-color: #fcdfdb;
-  margin: 2vh 8vw 8vh 8vw;
-  padding: 5vh 6vw 2vh 6vw;
-  box-shadow: 0px 0px 5px 5px #ededed;
-  font-family: "Kalam", cursive;
-  font-size: 0.9rem;
-}
-
 header {
   background-color: #579c87;
   color: #fdcb46;
   text-align: center;
-  height: 95px;
+  height: 94px;
 }
 header h1 {
   height: 7vh;
@@ -37,6 +21,26 @@ header h1 a {
   color: #fdcb46;
 }
 
+aside {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.9vh;
+  text-shadow: 0 0 1.2px;
+}
+aside p {
+  margin-bottom: 1.5vh;
+}
+
+main {
+  margin: 0 10vw 0 10vw;
+  padding: 4.5vh 8vw 2vh 8vw;
+  box-shadow: 0px 0px 5px 5px #ededed;
+  background-color: #fcdfdb;
+  font-size: 0.9rem;
+}
+
 .entete {
   text-align: center;
 }
@@ -47,21 +51,29 @@ header h1 a {
   -webkit-text-fill-color: transparent;
 }
 .entete h2 {
-  font-size: 2.2rem;
+  font-size: 1.4rem;
   margin-top: 0;
+  margin-bottom: 3.6vh;
   font-family: "Courgette", cursive;
 }
 
-section {
-  margin-bottom: 8vh;
-}
 section .container {
   display: flex;
   justify-content: space-between;
 }
+section .container .traitGauche, section .container .traitDroit {
+  width: 22vw;
+  height: 15px;
+}
 section .menu {
   display: flex;
   justify-content: space-between;
+  font-size: 0.65rem;
+  margin: 0;
+  padding: 0;
+}
+section .menu p {
+  margin: 6px 0 6px;
 }
 section .gras {
   font-weight: bold;
@@ -69,17 +81,19 @@ section .gras {
 section #dessert_sans_prix p {
   padding: 8px 0 8px;
 }
+section .menu:last-child {
+  margin-bottom: 38px;
+}
 
 .titresouligne {
   display: flex;
   flex-direction: column;
-  position: relative;
-  bottom: 25px;
+  margin-bottom: 6px;
 }
 .titresouligne h3 {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   cursor: pointer;
-  margin-bottom: 2px;
+  margin: 0;
 }
 .titresouligne .sousligner {
   height: 3px;
@@ -93,24 +107,26 @@ section #dessert_sans_prix p {
   transform-origin: left;
 }
 
-.trait {
-  height: 3px;
-  width: 20vw;
-  background-color: black;
-  margin-top: 7px;
-}
-
 .pied {
   display: flex;
   justify-content: center;
-  margin-top: 5vh;
+  align-items: center;
+  padding-bottom: 2vh;
 }
 .pied p {
-  margin-left: 20px;
-  margin-top: 7px;
-  /* alignement text */
-  font-size: 1.5rem;
+  margin-left: 10px;
+  font-size: 1.1rem;
   font-family: "Courgette", cursive;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 0 1vw;
+}
+.pied i {
+  background: -webkit-linear-gradient(left, #f05160, #cea624);
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.2vh;
 }
 
 footer {
@@ -123,31 +139,52 @@ footer {
   width: 100%;
   height: 6vh;
   align-items: center;
+  font-size: 1.3rem;
 }
 footer a {
   text-decoration: none;
   color: #fdcb46;
   padding: 0 2vw 0 2vw;
 }
-footer a:hover {
-  animation: wizz 400ms;
+footer :first-child {
+  animation: wizzinverse 500ms infinite;
+}
+footer :last-child {
+  animation: wizz 500ms infinite;
 }
 
 @keyframes wizz {
   0% {
-    transform: translateX(5px);
+    transform: translateX(0px);
   }
-  20% {
-    transform: translateX(-5px);
+  25% {
+    transform: translateX(4px);
   }
   50% {
-    transform: translateX(3px);
+    transform: translateX(0);
   }
   75% {
-    transform: translateX(-3px);
+    transform: translateX(-4px);
   }
   100% {
+    transform: translateX(4);
+  }
+}
+@keyframes wizzinverse {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  50% {
     transform: translateX(0);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(4);
   }
 }
 @media screen and (max-width: 345px) {
