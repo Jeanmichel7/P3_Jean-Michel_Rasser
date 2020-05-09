@@ -22,7 +22,6 @@ header{
         text-decoration: none;
         color:#fdcb46;
     }
-    
 }
 
 aside{
@@ -75,7 +74,6 @@ section{
     .container{
         display:flex;
         justify-content: space-between;
-        
 
         .traitGauche,.traitDroit{
             width:24vw;
@@ -94,8 +92,6 @@ section{
             margin:3px 0 3px 0;
             padding:0;
         }
-
-        
     }
        
 
@@ -114,6 +110,7 @@ section{
             margin:7px 0 7px;
         }
     }
+    
     .dernier{
         padding-bottom:45px;
     }
@@ -245,7 +242,6 @@ footer{
 
 
 @media screen and (max-width:345px){
-
     h1{
         padding:3vh 0 3vh 0;
     }
